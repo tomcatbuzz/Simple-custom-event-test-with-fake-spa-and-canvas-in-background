@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <script async type="module" src="app.js"></script>
+      <link rel="stylesheet" href="./style.css">
+      <title>My App</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <slot name="main"></slot>
+            <canvas id="webgl"></canvas>
+        </main>
+        <footer>
+            <p>&copy; 2023 My new super 3D app</p>
+        </footer>
+  </body>
+</html>
