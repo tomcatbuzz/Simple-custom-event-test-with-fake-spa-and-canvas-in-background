@@ -1,4 +1,4 @@
-export const navigateTo = (url) =>{
+export const navigateTo = (url) => {
     history.pushState(null, null, url)
     router()
 };
@@ -13,16 +13,16 @@ export const router = async () => {
 
     const potentialMatches = routes.map(route => {
         return {
-            route: route,
+            route,
             isMatch: location.pathname === route.path
         };
     });
 
     let match = potentialMatches.find(potentialMatch => potentialMatch.isMatch)
 
-    if(!match) {
-        match= {
-            route: routes[routes.length -1],
+    if (!match) {
+        match = {
+            route: routes[routes.length - 1],
             isMatch: true
         }
     }
