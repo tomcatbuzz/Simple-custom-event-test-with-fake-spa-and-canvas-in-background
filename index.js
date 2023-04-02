@@ -1,10 +1,7 @@
 import { router, navigateTo } from './src/router.js'
 import { canvas } from './src/canvas.js'
 import Transition from './src/transition.js'
-
-
-
-
+// import { transition } from './src/transition2.js'
 
 canvas(document.querySelector('#webgl'));
 

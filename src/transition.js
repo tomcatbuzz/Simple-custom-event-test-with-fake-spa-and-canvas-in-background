@@ -15,11 +15,14 @@ export default class {
     // this.element.top = 0
     // this.element.left = 0
 
+    this.color = ["black", "rgb(23, 98, 128)", "#690c0c"]
+
     this.context = this.element.getContext('2d')
 
     this.progress = 0
 
     document.body.appendChild(this.element)
+    
   }
 
   show ({ color }) {

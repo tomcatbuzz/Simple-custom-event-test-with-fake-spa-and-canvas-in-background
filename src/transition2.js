@@ -1,7 +1,7 @@
 export function transition(currentPage, nextPage) {
   return new Promise((resolve, reject) => {
-      const duration = 500;
-      let startTime;
+    const duration = 500;
+    let startTime;
 
       function animate(currentTime) {
           if (!startTime) {

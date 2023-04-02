@@ -56,3 +56,7 @@ footer {
     z-index: -1;
     transition: background-color 0.5s ease-in-out;
 }
+
+canvas {
+    z-index: 2;
+}
