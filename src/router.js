@@ -39,9 +39,9 @@ export const router = async () => {
             const title = doc.querySelector('title').textContent;
             document.title = title;
         })
-        .then(() => {
-            const event = new CustomEvent('navigation', { detail: { page: location.pathname } });
-            window.dispatchEvent(event);
-        })
+        // .then(() => {
+        //     const event = new CustomEvent('navigation', { detail: { page: location.pathname } });
+        //     window.dispatchEvent(event);
+        // })
         .catch(error => console.log(error));
 }
